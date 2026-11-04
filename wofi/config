@@ -1,0 +1,13 @@
+show=drun
+prompt=
+width=520
+height=340
+location=center
+layer=overlay
+columns=1
+insensitive=true
+allow_markup=true
+allow_images=false
+no_actions=true
+hide_scroll=true
+term=foot

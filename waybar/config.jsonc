@@ -1,0 +1,80 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "margin-top": 10,
+  "margin-left": 14,
+  "margin-right": 14,
+  "spacing": 0,
+
+  "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray"],
+
+
+  "sway/workspaces": {
+    "format": "{icon}",
+    "disable-scroll": true,
+    "all-outputs": false,
+      "format-icons": {
+        "1": "1", "2": "2", "3": "3", "4": "4", "5": "5",
+        "6": "6", "7": "7", "8": "8", "9": "9", "10": "10",
+        "11": "1", "12": "2", "13": "3", "14": "4", "15": "5",
+        "16": "6", "17": "7", "18": "8", "19": "9", "110": "10",
+        "21": "1", "22": "2", "23": "3", "24": "4", "25": "5",
+        "26": "6", "27": "7", "28": "8", "29": "9", "210": "10",
+        "default": "?"
+      }  
+  },
+    "sway/mode": {
+    "format": "{}"
+  },
+
+  "sway/window": {
+    "format": "{title}",
+    "max-length": 40
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%a %d %b %Y}",
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "format": "VOL {volume}",
+    "format-muted": "VOL --",
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": "{essid}",
+    "format-ethernet": "ETH",
+    "format-disconnected": "OFFLINE",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "format": "CPU {usage}",
+    "interval": 3,
+    "tooltip": false
+  },
+
+  "memory": {
+    "format": "MEM {percentage}",
+    "interval": 5,
+    "tooltip": false
+  },
+
+  "battery": {
+    "format": "BAT {capacity}",
+    "format-charging": "BAT {capacity}+",
+    "states": { "warning": 20, "critical": 10 },
+    "tooltip": false
+  },
+
+  "tray": {
+    "spacing": 10
+  }
+}
